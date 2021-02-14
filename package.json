@@ -1,0 +1,33 @@
+{
+  "name": "covid19_tracker_api",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "application serveur covid19 tracker",
+  "main": "tracker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --ignore 'errors/*.json' --experimental-json-modules tracker.js",
+    "nodev": "node --experimental-json-modules tracker.js"
+  },
+  "author": "youzamood <dev.josmidz007@gmail.com>",
+  "license": "UNLICENCED",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.1.3",
+    "express-validator": "^6.6.1",
+    "helmet": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.9.20",
+    "node-cron": "^2.0.3",
+    "nodemailer": "^6.4.13"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
